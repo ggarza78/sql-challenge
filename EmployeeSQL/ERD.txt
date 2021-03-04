@@ -15,6 +15,7 @@ title VARCHAR
 
 dept_emp
 -
+dept_emp_id PK INT
 emp_no INT FK >- employees.emp_no 
 dept_no VARCHAR FK >- departments.dept_no
 
@@ -25,11 +26,11 @@ dept_name VARCHAR
 
 dept_managers
 -
-dept_no VARCHAR FK >- departments.dept_no
+dept_no VARCHAR PK FK >- departments.dept_no
 emp_no INT FK >- employees.emp_no
 
 
 salaries
 -
-emp_no INT FK >- employees.emp_no
+emp_no INT PK FK >- employees.emp_no
 salary BIGINT
